@@ -13,11 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, device/asus/deb/device.mk)
 
-PRODUCT_NAME := full_deb
+PRODUCT_NAME := aosp_deb
 PRODUCT_DEVICE := deb
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := deb
+PRODUCT_MODEL := AOSP on Deb
 PRODUCT_MANUFACTURER := asus

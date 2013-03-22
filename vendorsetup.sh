@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_deb-userdebug
+add_lunch_combo aosp_deb-userdebug
