@@ -14,13 +14,37 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/asus/flo-kernel/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+# rild
+PRODUCT_PACKAGES := \
+    rild \
+    BasicSmsReceiver
 
 PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+    device/asus/deb/fstab.deb:root/fstab.flo \
+    device/asus/deb/init.deb.rc:root/init.flo.rc
 
+# Do not power down SIM card when modem is sent to Low Power Mode.
+PRODUCT_PROPERTY_OVERRIDES += \
+        persist.radio.apm_sim_not_pwdn=1
+
+# Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.telephony.call_ring.multiple=0
+
+#Stop rild if non 3G SKU
+PRODUCT_PACKAGES += \
+        init.qcom.class_main.sh
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+        rild.libpath=/system/lib/libril-qc-qmi-1.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+        telephony.lteOnCdmaDevice=0
+
+# the actual meat of the device-specific product definition
+$(call inherit-product, device/asus/flo/device-common.mk)
+
+# inherit from the non-open-source side, if present
 $(call inherit-product-if-exists, vendor/asus/deb/device-vendor.mk)
+
+DEVICE_PACKAGE_OVERLAYS := device/asus/deb/overlay
