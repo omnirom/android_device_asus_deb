@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES := \
     device/asus/deb/fstab.deb:root/fstab.flo \
     device/asus/deb/init.deb.rc:root/init.flo.rc
 
+PRODUCT_PACKAGES += \
+	camera.deb
+
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.radio.apm_sim_not_pwdn=1
