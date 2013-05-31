@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-TARGET_BOOTLOADER_BOARD_NAME := DEB
+TARGET_BOOTLOADER_BOARD_NAME := deb
 TARGET_BOOTLOADER_NAME := deb
 TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
 
