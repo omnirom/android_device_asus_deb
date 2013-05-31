@@ -26,6 +26,10 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES += \
 	camera.deb
 
+#NFC
+PRODUCT_PACKAGES += \
+    nfc_nci.deb
+
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.radio.apm_sim_not_pwdn=1
