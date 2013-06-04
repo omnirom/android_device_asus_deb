@@ -50,7 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/flo/device-common.mk)
