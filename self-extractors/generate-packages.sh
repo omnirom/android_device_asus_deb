@@ -17,12 +17,13 @@
 # start jb-mr2-dev
 # 700272 = JSR67
 # 703372 = JSR71
+# 704765 = JSR72
 # end jb-mr2-dev
 BRANCH=jb-mr2-dev
 if test $BRANCH = jb-mr2-dev
 then
-  ZIP=razorg-ota-703372
-  BUILD=jsr71
+  ZIP=razorg-ota-704765
+  BUILD=jsr72
 fi # jb-mr2-dev
 ROOTDEVICE=deb
 DEVICE=deb
