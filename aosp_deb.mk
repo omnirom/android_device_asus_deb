@@ -21,7 +21,7 @@
 $(call inherit-product, device/asus/deb/device.mk)
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 PRODUCT_NAME := aosp_deb
 PRODUCT_DEVICE := deb
