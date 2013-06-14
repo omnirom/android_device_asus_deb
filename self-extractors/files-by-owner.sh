@@ -56,7 +56,7 @@ echo "  $target_owner)" >> extract-lists.txt
 echo "    TO_EXTRACT=\"\\" >> extract-lists.txt
 
 
-cat ../proprietary-blobs.txt ../proprietary-blobs-extra.txt |
+cat ../proprietary-blobs.txt |
 grep ^/ |
 cut -b 2- |
 sort |
