@@ -42,6 +42,7 @@
 /system/bin/thermald
 /system/bin/usbhub
 /system/bin/usbhub_init
+/system/etc/apns-conf.xml
 /system/etc/DxHDCP.cfg
 /system/etc/firmware/tzapps.b00
 /system/etc/firmware/tzapps.b01
