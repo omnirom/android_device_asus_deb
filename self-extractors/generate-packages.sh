@@ -20,12 +20,13 @@
 # 704765 = JSR72
 # 708191 = JSR74
 # 711747 = JSR78
+# 713896 = JSR78B
 # end jb-mr2-dev
 BRANCH=jb-mr2-dev
 if test $BRANCH = jb-mr2-dev
 then
-  ZIP=razorg-ota-711747
-  BUILD=jsr78
+  ZIP=razorg-ota-713896
+  BUILD=jsr78b
 fi # jb-mr2-dev
 ROOTDEVICE=deb
 DEVICE=deb
