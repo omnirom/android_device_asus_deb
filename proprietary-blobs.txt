@@ -24,7 +24,6 @@
 /system/bin/hci_qcomm_init
 /system/bin/irsc_util
 /system/bin/ks
-/system/bin/mm-pp-daemon
 /system/bin/mm-qcamera-app
 /system/bin/mm-qcamera-daemon
 /system/bin/mm-qjpeg-enc-test
@@ -97,7 +96,6 @@
 /system/lib/libloc_adapter.so
 /system/lib/libloc_api_v02.so
 /system/lib/libloc_eng.so
-/system/lib/libmm-abl-oem.so
 /system/lib/libmm-abl.so
 /system/lib/libmm-color-convertor.so
 /system/lib/libmmcamera2_stats_algorithm.so
@@ -129,6 +127,7 @@
 /system/vendor/firmware/a300_pfp.fw
 /system/vendor/firmware/a300_pm4.fw
 /system/vendor/firmware/bcm2079x-b5_firmware.ncd
+/system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd
 /system/vendor/firmware/discretix/dxhdcp2.b00
 /system/vendor/firmware/discretix/dxhdcp2.b01
 /system/vendor/firmware/discretix/dxhdcp2.b02
