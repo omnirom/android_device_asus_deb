@@ -187,6 +187,9 @@ on post-fs-data
     # Modify from 777 (for camera calibration) to 775
     chmod 775 /persist/camera_calibration
 
+    chmod 664 /persist/ssn
+    chmod 664 /persist/60isn
+
     #Provide the access to hostapd.conf only to root and group
     chmod 0660 /data/hostapd/hostapd.conf
 
