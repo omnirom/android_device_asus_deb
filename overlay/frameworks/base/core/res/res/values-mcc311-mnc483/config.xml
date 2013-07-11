@@ -23,6 +23,6 @@
     <!-- Verizon -->
 
     <string name="mobile_provisioning_url">
-     http://quickaccess.verizonwireless.com/bbportal/oem/start.do?mdn=%3$s&amp;oem=XXX&amp;iccid=%1$s&amp;imei=%2$s
+     http://quickaccess.verizonwireless.com/bbportal/oem/start.do?mdn=%3$s&amp;oem=NEXT&amp;iccid=%1$s&amp;imei=%2$s
     </string>
 </resources>
