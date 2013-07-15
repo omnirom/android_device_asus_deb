@@ -18,13 +18,14 @@
 # 704765 = JSR72
 # 740015 = JSS11F
 # 741000 = JSS11I
+# 741250 = JSS15
 # end jb-mr2-dev
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=741000
+BUILD=741250
 DEVICE=deb
 PRODUCT=razorg
-VERSION=jss11i
+VERSION=jss15
 #SRCPREFIX=signed-
 BOOTLOADER=flo-03.10.2
 RADIO=deb-g00_1.22.0_0711
