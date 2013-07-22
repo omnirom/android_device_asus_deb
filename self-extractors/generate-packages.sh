@@ -30,12 +30,13 @@
 # 741250 = JSS15
 # 746990 = JSS15H
 # 748502 = JSS15I
+# 748593 = JSS15J
 # end jb-mr2-dev
 BRANCH=jb-mr2-dev
 if test $BRANCH = jb-mr2-dev
 then
-  ZIP=razorg-ota-748502
-  BUILD=jss15i
+  ZIP=razorg-ota-748593
+  BUILD=jss15j
 fi # jb-mr2-dev
 ROOTDEVICE=deb
 DEVICE=deb
