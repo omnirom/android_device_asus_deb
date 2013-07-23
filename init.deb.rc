@@ -95,6 +95,8 @@ on boot
     # Enable DEBUG_SUSPEND, DEBUG_EXIT_SUSPEND, and DEBUG_WAKEUP
     write /sys/module/wakelock/parameters/debug_mask 7
 
+    write /proc/sys/vm/swappiness 0
+
     #To allow interfaces to get v6 address when tethering is enabled
     write /proc/sys/net/ipv6/conf/rmnet0/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet1/accept_ra 2
@@ -183,6 +185,9 @@ on post-fs-data
     # Modify from 777 (for camera calibration) to 775
     chmod 775 /persist/camera_calibration
 
+    chmod 664 /persist/ssn
+    chmod 664 /persist/60isn
+
     #Provide the access to hostapd.conf only to root and group
     chmod 0660 /data/hostapd/hostapd.conf
 
@@ -243,6 +248,7 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
+    write /dev/cpuctl/apps/cpu.notify_on_migrate 1
 
 on charger
     # Enable Power modes and set the CPU Freq Sampling rates
@@ -417,8 +423,9 @@ service thermald /system/bin/thermald
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     class main
 
-service ppd /system/bin/mm-pp-daemon -s
+service ppd /system/bin/mm-pp-daemon
     class late_start
+    disabled
     user system
     socket pps stream 0660 system system graphics
     group system graphics
@@ -456,6 +463,9 @@ service qseecomd /system/bin/qseecomd
 service diag_mdlog /system/bin/logwrapper /system/bin/diag_mdlog -s 100
     class late_start
     disabled
+
+on property:init.svc.surfaceflinger=running
+    start ppd
 
 on property:init.svc.surfaceflinger=stopped
     stop ppd

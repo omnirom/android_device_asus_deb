@@ -269,6 +269,7 @@ struct sensorb_cfg_data {
 		int8_t effect;
 		uint8_t wb_val;
 		int8_t exp_compensation;
+		int8_t fps;
 	} cfg;
 };
 
@@ -334,6 +335,7 @@ enum msm_sensor_cfg_type_t {
 	CFG_SET_START_STREAM,
 	CFG_SET_EFFECT,
 	CFG_SET_WB,
+	CFG_SET_FPS,
 	CFG_SET_EXPOSURE_COMPENSATION,
 };
 
@@ -457,16 +459,24 @@ enum af_camera_name {
 #define  YUV_CAMERA_WB_CUSTOM             1
 #define  YUV_CAMERA_WB_INCANDESCENT       2
 #define  YUV_CAMERA_WB_FLUORESCENT        3
-#define  YUV_CAMERA_WB_DAYLIGHT           4
-#define  YUV_CAMERA_WB_CLOUDY_DAYLIGHT    5
-#define  YUV_CAMERA_WB_TWILIGHT           6
-#define  YUV_CAMERA_WB_SHADE              7
+#define  YUV_CAMERA_WB_WARM_FLUORESCENT   4
+#define  YUV_CAMERA_WB_DAYLIGHT           5
+#define  YUV_CAMERA_WB_CLOUDY_DAYLIGHT    6
+#define  YUV_CAMERA_WB_TWILIGHT           7
+#define  YUV_CAMERA_WB_SHADE              8
 
 #define CAMERA_EXPOSURE_COMPENSATION_LV0			12
 #define CAMERA_EXPOSURE_COMPENSATION_LV1			6
 #define CAMERA_EXPOSURE_COMPENSATION_LV2			0
 #define CAMERA_EXPOSURE_COMPENSATION_LV3			-6
 #define CAMERA_EXPOSURE_COMPENSATION_LV4			-12
+
+#define CAMERA_FPS_FIX_30			30
+#define CAMERA_FPS_FIX_25			25
+#define CAMERA_FPS_FIX_24			24
+#define CAMERA_FPS_FIX_20			20
+#define CAMERA_FPS_FIX_15			15
+#define CAMERA_FPS_AUTO_30			0
 
 struct msm_actuator_cfg_data {
 	int cfgtype;
