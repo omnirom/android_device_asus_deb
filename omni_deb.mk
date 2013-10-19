@@ -38,6 +38,6 @@ TARGET_VARIANT_CONFIG := flo_defconfig
 TARGET_SELINUX_CONFIG := flo_defconfig
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/deb/device.mk)
+$(call inherit-product, device/asus/deb/device.mk)
 $(call inherit-product-if-exists, vendor/asus/deb/device-vendor.mk)
 #$(call inherit-product-if-exists, vendor/qcom/proprietary/common/config/device-vendor.mk)
