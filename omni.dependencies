@@ -2,6 +2,7 @@
  {
    "repository": "android_kernel_google_msm",
    "target_path": "kernel/google/msm"
+   "revision":    "android-msm-flo-3.4-jb-mr2"
  },
  {
    "repository": "android_device_asus_flo",
