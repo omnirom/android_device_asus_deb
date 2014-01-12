@@ -14,4 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_deb.mk
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_deb.mk \
+    $(LOCAL_DIR)/omni_deb.mk
