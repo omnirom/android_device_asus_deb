@@ -3,7 +3,7 @@
     "remote":       "omnirom",
     "repository":   "android_kernel_asus_flo",
     "target_path":  "kernel/asus/flo",
-    "revision":     "android-4.4"
+    "revision":     "android-5.0"
   },
  {
    "repository": "android_device_asus_flo",
