@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8eba960_c700f2b3",
+        "filename": "omni_deb.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000979
+      },
+      "writtenOn": "2015-06-29T23:45:22Z",
+      "side": 1,
+      "message": "Lets clean this up, I see it was there before...\n\nNo need to have unneeded whitespaces....",
+      "revId": "02cbe980394ef79d471333718385fe19a66923eb",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
