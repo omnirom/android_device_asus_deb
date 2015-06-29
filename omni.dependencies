@@ -3,10 +3,18 @@
     "remote":       "omnirom",
     "repository":   "android_kernel_asus_flo",
     "target_path":  "kernel/asus/flo",
-    "revision":     "android-4.4"
+    "revision":     "android-5.1"
   },
  {
+   "remote":      "omnirom",
    "repository": "android_device_asus_flo",
-   "target_path": "device/asus/flo"
- }
+   "target_path": "device/asus/flo",
+   "revision":    "android-5.1"
+ },
+  {
+    "remote":       "omnirom",
+    "repository":   "android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.7",
+    "target_path":  "prebuilts/gcc/linux-x86/arm/arm-eabi-4.7",
+    "revision":     "android-5.1"
+  }
 ]
