@@ -35,7 +35,8 @@
          or string format of ApnSettingV2.
          note that empty fields can be ommitted: "name,apn,,,,,,,,,310,260,,DUN" -->
     <string-array translatable="false" name="config_tether_apndata">
-        <item>Orange Internet,orange.fr,,,orange,orange,,,,,208,01,,DUN"</item>
+
+        <item>Orange Internet PC,internet,,,orange,orange,,,,,214,03,,DUN"</item>
     </string-array>
 
 </resources>

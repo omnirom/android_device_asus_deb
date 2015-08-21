@@ -28,15 +28,15 @@ PRODUCT_PACKAGES += \
 
 #NFC
 PRODUCT_PACKAGES += \
-    nfc_nci.deb
+    nfc_nci.bcm2079x.default
+
+# http://b/15193147
+# TODO(danalbert): Remove this once stlport is dead and gone.
+PRODUCT_PACKAGES +=  libstlport
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.radio.apm_sim_not_pwdn=1
-
-#Stop rild if non 3G SKU
-PRODUCT_PACKAGES += \
-        init.qcom.class_main.sh
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         rild.libpath=/system/lib/libril-qc-qmi-1.so
